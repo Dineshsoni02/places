@@ -1,12 +1,16 @@
 import React from 'react';
+
 import UsersItems from './UsersItems';
 import './UsersList.css';
-
+import '../../shared/components/UIElemenet/Card'
+import Card from '../../shared/components/UIElemenet/Card';
 const UsersList = props => {
     if(props.items.length===0){
         return (
             <div className="center">
+                <Card>
                 <h2>No Users found</h2>
+                </Card>
             </div>
         );
     }
